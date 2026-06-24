@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "seethroughlava",
+  "version": "${version}",
+  "name": "SeeThroughLava",
+  "description": "See through fog in Lava, Water",
+  "authors": [
+    "spoorn"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/see-through-lava-water",
+    "sources": "https://github.com/spoorn/SeeThroughLava"
+  },
+  "license": "GPL-3.0-only",
+  "icon": "assets/seethroughlava/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.spoorn.seethroughlava.fabric.SeeThroughLavaFabric"
+    ],
+    "modmenu": [
+      "org.spoorn.seethroughlava.fabric.config.SeeThroughLavaModMenuApiImpl"
+    ]
+  },
+  "mixins": [
+    "seethroughlava-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": ">=0.152.2+26.2",
+    "minecraft": ">=26.2 <26.3",
+    "cloth-config2": ">=26.2.155",
+    "java": ">=25"
+  },
+  "suggests": {
+    "modmenu": ">=20.0.0-alpha.1"
+  }
+}

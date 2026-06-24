@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/spoorn/SeeThroughLava/issues"
+license = "GPL-3.0-only"
+
+[[mods]]
+modId = "seethroughlava"
+version = "${version}"
+displayName = "SeeThroughLava"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/see-through-lava-water"
+authors = "spoorn"
+description = '''
+See through fog in Lava, Water
+'''
+logoFile = "assets/seethroughlava/icon.png"
+
+[[mixins]]
+config = "seethroughlava-common.mixins.json"
+
+[[dependencies.seethroughlava]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[26.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.seethroughlava]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[26.2,26.3)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.seethroughlava]]
+modId = "cloth_config"
+mandatory = true
+versionRange = "[26.2,)"
+ordering = "NONE"
+side = "CLIENT"
